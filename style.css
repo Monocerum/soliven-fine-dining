@@ -1,20 +1,188 @@
-nav {
-    background-color: #00314F;
-    font-size: 1.5em;
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(132.38deg, #DCF4F8 21.69%, #CDF8FF 99.77%);
 }
 
 * {
     font-family: "Inika", serif;
 }
 
-.logo-img {
-    padding: 1em;
-}
-
-#navContents {
-    padding: 0 5%;
+nav {
+    background-color: #00314F;
+    font-size: 1.5em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .nav-item {
-    padding: 0 1em;
+    list-style-type: none;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-img {
+    height: 50px;
+    margin: 0.5em 1em;
+}
+
+#navContents {
+    padding: 0.5% 5%;
+}
+
+.nav-item {
+    padding: 0 0.7rem;
+}
+
+.carousel-caption-header {
+    font-size: 4rem;
+}
+
+.carousel-caption-desc {
+    font-size: 1.5rem;
+}
+
+.carousel-caption {
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+}
+
+.carousel-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.featured-foods {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 5%;
+    gap: 5%;
+}
+
+.featured-food-card {
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid #00314F;
+    box-shadow: 0px 4px 10px #000000;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 5%;
+}
+
+.featured-food-card img {
+    object-fit: contain;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+}
+
+.about-section {
+    padding: 5%;
+    background: linear-gradient(130.84deg, #00314F 10%, #00090F 89.7%);
+    color: white;
+}
+
+.about-header {
+    font-size: 2.5rem;
+    padding: 2%;
+}
+
+.about-section .soliven-logo {
+    width: 200px;
+}
+
+.about-subheader {
+    padding: 2%;
+    font-size: 1.5rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+}
+
+.about-desc {
+    padding: 2% 0;
+}
+
+.soliven-images {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2%;
+}
+
+.soliven-images img {
+    width: 100%;
+}
+
+.contact {
+    width: 50%;
+    margin: 10% auto;
+}
+
+.contact-container {
+    background: linear-gradient(96.69deg, #00314F 6.74%, #002236 104.65%);
+    border-radius: 20px;
+    color: white;
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-header {
+    padding-bottom: 5%;
+}
+
+.contact-desc {
+    text-align: start;
+}
+
+.contact-icon {
+    padding-right: 2%;
+}
+
+footer {
+    background: linear-gradient(90deg, #00314F 0%, #001928 100%);
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    color: white;
+    padding: 1% 0;
+}
+
+footer .logo-container img {
+    height: 50px;
+}
+
+footer .copyright-container p {
+    margin: 0px;
+    font-size: 0.7rem;
+}
+
+footer .contact-link img {
+    width: 24px;
+    margin: 0 1%;
+}
+
+@media only screen and (max-width: 1280px) {
+    body {
+      background-color: white;
+    }
+  }
