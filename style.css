@@ -1,0 +1,20 @@
+nav {
+    background-color: #00314F;
+    font-size: 1.5em;
+}
+
+* {
+    font-family: "Inika", serif;
+}
+
+.logo-img {
+    padding: 1em;
+}
+
+#navContents {
+    padding: 0 5%;
+}
+
+.nav-item {
+    padding: 0 1em;
+}
