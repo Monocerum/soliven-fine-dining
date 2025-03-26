@@ -181,6 +181,10 @@ footer .contact-link img {
     margin: 0 1%;
 }
 
+.nav-link:active {
+    color: #72E0FF;
+}
+
 @media only screen and (max-width: 1280px) {
     body {
       background-color: white;
