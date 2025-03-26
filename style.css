@@ -190,3 +190,10 @@ footer .contact-link img {
       background-color: white;
     }
   }
+
+/* CONTACT PAGE */
+.contact-page-body {
+    background-image: url(assets/contact-bg.png);
+    background-repeat: no-repeat;
+    height: 100%;
+}
