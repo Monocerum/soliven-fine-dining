@@ -620,6 +620,8 @@ footer .footer-contacts a img:hover {
     margin-top: 20px;   
     min-width: 30%;
     height: auto;
+    transform: translateY(-20px);
+    animation: fadeInDown 1.5s ease-out forwards; 
     
 }
 
@@ -631,6 +633,7 @@ footer .footer-contacts a img:hover {
     line-height: 81px;
     letter-spacing: 0.08em;
     color: #000000;
+  
     
 }
 
@@ -640,11 +643,22 @@ footer .footer-contacts a img:hover {
 }
 
 
-.story-part{
-    margin-right: 2%;
-    margin-left: 2%;
-    margin-top: 10px;
-    
+.story-part {
+    margin: 10px 2% 0 2%;
+    opacity: 0;
+    transform: translateY(-20px); 
+    animation: fadeInDown 1.5s ease-out forwards; 
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
 }
 
 .row-1 {
