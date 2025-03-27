@@ -437,6 +437,10 @@ footer .footer-contacts a img:hover {
     grid-area: contact3; 
 }
 
+.contact1, .contact2, .contact3 {
+    animation: leftSlide 1s ease-in 0s 1 normal forwards;
+}
+
 .contact-desc {
     background: linear-gradient(96.69deg, #00314F 6.74%, #002236 104.65%);
     border-radius: 20px;
