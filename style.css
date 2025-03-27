@@ -250,6 +250,11 @@ footer .contact-link img {
     margin: 0 1%;
 }
 
+footer .footer-contacts a img:hover {
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+
 /* RESPONSIVE STYLES */
 
 /* CONTACT PAGE */
