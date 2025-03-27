@@ -15,84 +15,88 @@
     <title>Soliven Fine Dining - Homepage</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="row w-100 align-items-center" id="navContents">
-            <div class="col"> 
-                <a href="#" class="navbar-brand mb-0 h1">
-                    <img class="logo-img" src="assets/logo.png" alt="Soliven Fine Dining Restaurant Logo">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="row w-100 align-items-center" id="navContents">
+                <div class="col"> 
+                    <a href="#" class="navbar-brand mb-0 h1">
+                        <img class="logo-img" src="assets/logo.png" alt="Soliven Fine Dining Restaurant Logo">
+                    </a>
+                </div>
+                <div class="col-6 collapse navbar-collapse text-center" id="navMain">
+                    <ul class="navbar-nav ms-auto"> 
+                        <li class="nav-item"><a class="nav-link active" href=#>HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href=#>MENU</a></li>
+                        <li class="nav-item"><a class="nav-link" href=#>GALLERY</a></li>
+                        <li class="nav-item"><a class="nav-link" href=#>ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                    <button class="col-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="carousel">
+            <div id="carouselIndicator" class="carousel slide carousel-slideshow" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#carouselIndicator" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#carouselIndicator" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#carouselIndicator" data-bs-slide-to="2"></li>
+                  <li data-bs-target="#carouselIndicator" data-bs-slide-to="3"></li>
+                  <li data-bs-target="#carouselIndicator" data-bs-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active c-item">
+                        <img class="carousel-img d-block w-100 c-img" src="assets/carousel-item-restaurant.png" alt="Slide 1: Photo of Soliven Fine Dining">
+                        <div class="carousel-caption d-none d-md-block rounded p-3">
+                            <h2 class="text-white carousel-caption-header py-3"><strong>Get Hooked on the Ocean’s Finest </strong></h2>
+                            <p class="text-white carousel-caption-desc">A refined dining experience where the ocean’s finest catches meet exceptional craftsmanship. "Get Hooked on the Ocean’s Finest" is more than a motto—it’s our promise to serve the freshest seafood, expertly prepared to highlight its natural flavors. Indulge in a culinary journey that celebrates the essence of the sea, crafted with elegance and precision.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img class="carousel-img d-block w-100 c-img" src="assets/carousel-item-shrimp.png" alt="Slide 1: Photo of Soliven Fine Dining">
+                        <div class="carousel-caption d-none d-md-block rounded p-3">
+                            <h2 class="text-white carousel-caption-header py-3"><strong>Get Hooked on the Ocean’s Finest </strong></h2>
+                            <p class="text-white carousel-caption-desc">A refined dining experience where the ocean’s finest catches meet exceptional craftsmanship. "Get Hooked on the Ocean’s Finest" is more than a motto—it’s our promise to serve the freshest seafood, expertly prepared to highlight its natural flavors. Indulge in a culinary journey that celebrates the essence of the sea, crafted with elegance and precision.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img class="carousel-img d-block w-100 c-img" src="assets/carousel-item-oyster.png" alt="Slide 1: Photo of Soliven Fine Dining">
+                        <div class="carousel-caption d-none d-md-block rounded p-3">
+                            <h2 class="text-white carousel-caption-header py-3"><strong>Get Hooked on the Ocean’s Finest </strong></h2>
+                            <p class="text-white carousel-caption-desc">A refined dining experience where the ocean’s finest catches meet exceptional craftsmanship. "Get Hooked on the Ocean’s Finest" is more than a motto—it’s our promise to serve the freshest seafood, expertly prepared to highlight its natural flavors. Indulge in a culinary journey that celebrates the essence of the sea, crafted with elegance and precision.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img class="carousel-img d-block w-100 c-img" src="assets/carousel-item-pandan.png" alt="Slide 1: Photo of Soliven Fine Dining">
+                        <div class="carousel-caption d-none d-md-block rounded p-3">
+                            <h2 class="text-white carousel-caption-header py-3"><strong>Get Hooked on the Ocean’s Finest </strong></h2>
+                            <p class="text-white carousel-caption-desc">A refined dining experience where the ocean’s finest catches meet exceptional craftsmanship. "Get Hooked on the Ocean’s Finest" is more than a motto—it’s our promise to serve the freshest seafood, expertly prepared to highlight its natural flavors. Indulge in a culinary journey that celebrates the essence of the sea, crafted with elegance and precision.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img class="carousel-img d-block w-100 c-img" src="assets/carousel-item-pie.png" alt="Slide 1: Photo of Soliven Fine Dining">
+                        <div class="carousel-caption d-none d-md-block rounded ">
+                            <h2 class="text-white carousel-caption-header py-3"><strong>Get Hooked on the Ocean’s Finest </strong></h2>
+                            <p class="text-white carousel-caption-desc">A refined dining experience where the ocean’s finest catches meet exceptional craftsmanship. "Get Hooked on the Ocean’s Finest" is more than a motto—it’s our promise to serve the freshest seafood, expertly prepared to highlight its natural flavors. Indulge in a culinary journey that celebrates the essence of the sea, crafted with elegance and precision.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselIndicator" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselIndicator" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </a>
             </div>
-            <div class="col-6 collapse navbar-collapse text-center" id="navMain">
-                <ul class="navbar-nav ms-auto"> 
-                    <li class="nav-item"><a class="nav-link active" href=#>HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href=#>MENU</a></li>
-                    <li class="nav-item"><a class="nav-link" href=#>GALLERY</a></li>
-                    <li class="nav-item"><a class="nav-link" href=#>ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-                <button class="col-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        </div>
-    </nav>
-    <section class="home" id="solivenHome">
-        <div id="carouselIndicator" class="carousel slide carousel-slideshow" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-bs-target="#carouselIndicator" data-bs-slide-to="0" class="active"></li>
-              <li data-bs-target="#carouselIndicator" data-bs-slide-to="1"></li>
-              <li data-bs-target="#carouselIndicator" data-bs-slide-to="2"></li>
-              <li data-bs-target="#carouselIndicator" data-bs-slide-to="3"></li>
-              <li data-bs-target="#carouselIndicator" data-bs-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active c-item">
-                    <img class="carousel-img d-block w-100 c-img" src="assets/carousel-item-restaurant.png" alt="Slide 1: Photo of Soliven Fine Dining">
-                    <div class="carousel-caption d-none d-md-block rounded p-3">
-                        <h2 class="text-white carousel-caption-header py-3"><strong>Get Hooked on the Ocean’s Finest </strong></h2>
-                        <p class="text-white carousel-caption-desc">A refined dining experience where the ocean’s finest catches meet exceptional craftsmanship. "Get Hooked on the Ocean’s Finest" is more than a motto—it’s our promise to serve the freshest seafood, expertly prepared to highlight its natural flavors. Indulge in a culinary journey that celebrates the essence of the sea, crafted with elegance and precision.</p>
-                    </div>
-                </div>
-                <div class="carousel-item c-item">
-                    <img class="carousel-img d-block w-100 c-img" src="assets/carousel-item-shrimp.png" alt="Slide 1: Photo of Soliven Fine Dining">
-                    <div class="carousel-caption d-none d-md-block rounded p-3">
-                        <h2 class="text-white carousel-caption-header py-3"><strong>Get Hooked on the Ocean’s Finest </strong></h2>
-                        <p class="text-white carousel-caption-desc">A refined dining experience where the ocean’s finest catches meet exceptional craftsmanship. "Get Hooked on the Ocean’s Finest" is more than a motto—it’s our promise to serve the freshest seafood, expertly prepared to highlight its natural flavors. Indulge in a culinary journey that celebrates the essence of the sea, crafted with elegance and precision.</p>
-                    </div>
-                </div>
-                <div class="carousel-item c-item">
-                    <img class="carousel-img d-block w-100 c-img" src="assets/carousel-item-oyster.png" alt="Slide 1: Photo of Soliven Fine Dining">
-                    <div class="carousel-caption d-none d-md-block rounded p-3">
-                        <h2 class="text-white carousel-caption-header py-3"><strong>Get Hooked on the Ocean’s Finest </strong></h2>
-                        <p class="text-white carousel-caption-desc">A refined dining experience where the ocean’s finest catches meet exceptional craftsmanship. "Get Hooked on the Ocean’s Finest" is more than a motto—it’s our promise to serve the freshest seafood, expertly prepared to highlight its natural flavors. Indulge in a culinary journey that celebrates the essence of the sea, crafted with elegance and precision.</p>
-                    </div>
-                </div>
-                <div class="carousel-item c-item">
-                    <img class="carousel-img d-block w-100 c-img" src="assets/carousel-item-pandan.png" alt="Slide 1: Photo of Soliven Fine Dining">
-                    <div class="carousel-caption d-none d-md-block rounded p-3">
-                        <h2 class="text-white carousel-caption-header py-3"><strong>Get Hooked on the Ocean’s Finest </strong></h2>
-                        <p class="text-white carousel-caption-desc">A refined dining experience where the ocean’s finest catches meet exceptional craftsmanship. "Get Hooked on the Ocean’s Finest" is more than a motto—it’s our promise to serve the freshest seafood, expertly prepared to highlight its natural flavors. Indulge in a culinary journey that celebrates the essence of the sea, crafted with elegance and precision.</p>
-                    </div>
-                </div>
-                <div class="carousel-item c-item">
-                    <img class="carousel-img d-block w-100 c-img" src="assets/carousel-item-pie.png" alt="Slide 1: Photo of Soliven Fine Dining">
-                    <div class="carousel-caption d-none d-md-block rounded ">
-                        <h2 class="text-white carousel-caption-header py-3"><strong>Get Hooked on the Ocean’s Finest </strong></h2>
-                        <p class="text-white carousel-caption-desc">A refined dining experience where the ocean’s finest catches meet exceptional craftsmanship. "Get Hooked on the Ocean’s Finest" is more than a motto—it’s our promise to serve the freshest seafood, expertly prepared to highlight its natural flavors. Indulge in a culinary journey that celebrates the essence of the sea, crafted with elegance and precision.</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselIndicator" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselIndicator" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
-        </div>
-    </section>
-    <div class="featured">
+        </section>
+    </main>
+    <section class="featured">
         <div class="featured-header">
             <img src="assets/best-foods-header.png" alt="Chef's Best Foods" class="featured-header">
         </div>
@@ -103,38 +107,38 @@
                         <img src="assets/crispy-calamari.jpg" alt="Photo of Crispy Calamari">
                     </div>
                     <h3>Crispy Calamari</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, esse voluptatibus ex aut asperiores id. Perspiciatis vel commodi praesentium, at magnam consectetur exercitationem dolore quasi impedit dolorem! Est, possimus maiores.</p>
+                    <p>Savor the crunch of Soliven Fine Dining's <strong>Crispy Calamari</strong>. Lightly battered sliced shrimps and fried to golden perfection, served with a zesty garlic aioli.</p>
                 </div>
             </div>
             <div class="featured-food-card">
                 <div class="card-content">
                     <div class="featured-food-container">
-                        <img src="assets/crispy-calamari.jpg" alt="Photo of Crispy Calamari">
+                        <img src="assets/ocean-feast-classic.jpg" alt="Photo of the Ocean Feast Bucket Boil - Classic">
                     </div>
-                    <h3>Crispy Calamari</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, esse voluptatibus ex aut asperiores id. Perspiciatis vel commodi praesentium, at magnam consectetur exercitationem dolore quasi impedit dolorem! Est, possimus maiores.</p>
+                    <h3>Ocean Feast Bucket Boil</h3>
+                    <p>A rich and indulgent seafood experience crafted for true seafood lovers. Simmered in a flavorful blend of spices and butter, the <strong>Ocean Feast Bucket Boil</strong> brings the perfect balance of freshness and bold flavors.</p>
                 </div>
             </div>
             <div class="featured-food-card">
                 <div class="card-content">
                     <div class="featured-food-container">
-                        <img src="assets/crispy-calamari.jpg" alt="Photo of Crispy Calamari">
+                        <img src="assets/lime-pie.jpg" alt="Photo of the Key Lime Pie">
                     </div>
-                    <h3>Crispy Calamari</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, esse voluptatibus ex aut asperiores id. Perspiciatis vel commodi praesentium, at magnam consectetur exercitationem dolore quasi impedit dolorem! Est, possimus maiores.</p>
+                    <h3>Key Lime Pie</h3>
+                    <p>Find delight in Soliven Fine Dining's best selling dessert, the <strong>Key Lime Pie</strong>! This pie  refreshing and zesty pie with a smooth lime filling and a crisp graham cracker crust.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <section class="about-section text-center">
         <h2 class="text-center about-header">ABOUT US</h2>
         <img class="soliven-logo" src="assets/logo.png" alt="Logo of Soliven Fine Dining">
         <p class="text-center about-subheader"><strong>"Get Hooked on the Ocean's Finest"</strong></p>
-        <div class="about-desc">
+        <article class="about-desc">
             <p class="text-start">Founded with a passion for excellence, Soliven Fine Dining began on 2016 as a vision to bring the freshest seafood and finest culinary craftsmanship to discerning diners. What started as a humble idea has grown into a sophisticated dining experience where the ocean’s bounty meets culinary artistry.</p>
             <p class="text-start">At Soliven, we believe that great food is more than just a meal—it’s an experience. Our philosophy is rooted in quality, sustainability, and impeccable service. Every dish is carefully prepared using the freshest ingredients, ensuring that each bite reflects the purity and richness of the ocean.</p>
             <p class="text-start">Join us and indulge in a dining journey where elegance meets the ocean’s finest flavors.</p>
-        </div>
+        </article>
         <div class="soliven-images">
             <img src="assets/soliven-1.png" alt="Photo of Soliven Fine Dining's Signature Crab Oyster Dish">
             <img src="assets/soliven-2.png" alt="Photo of the chefs in Soliven Fine Dining preparing food">
@@ -160,9 +164,9 @@
             <p>&copy; 2024 Soliven Fine Dining. All Rights Reserved. <br> Unauthorized use or reproduction of content is strictly prohibited.</p>
         </div>
         <div class="footer-contacts">
-            <a href="https://www.facebook.com/" class="contact-link"><img src="assets/fb-logo.png" alt="Logo of Facebook" class="contact-logo"></a>
-            <a href="https://www.instagram.com/" class="contact-link"><img src="assets/instagram-logo.png" alt="Logo of Instagram" class="contact-logo"></a>
-            <a href="https://x.com/?lang=en" class="contact-link"><img src="assets/twitter-logo.png" alt="Logo of Twitter" class="contact-logo"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="contact-link"><img src="assets/fb-logo.png" alt="Logo of Facebook" class="contact-logo"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="contact-link"><img src="assets/instagram-logo.png" alt="Logo of Instagram" class="contact-logo"></a>
+            <a href="https://x.com/?lang=en" target="_blank" class="contact-link"><img src="assets/twitter-logo.png" alt="Logo of Twitter" class="contact-logo"></a>
         </div>
     </footer>
 </body>
