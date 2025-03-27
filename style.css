@@ -789,8 +789,13 @@ footer .footer-contacts a img:hover {
     height: auto;
     object-fit: cover; 
     border-radius: 10px; 
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.8; 
 }
-
+.row-4 img:hover {
+    transform: scale(1.09); 
+    opacity: 1; 
+}
 
 @media (max-width: 768px) {
     .row-4 img {
@@ -865,7 +870,14 @@ footer .footer-contacts a img:hover {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.8; 
+}
+
+.third-row .resto-img:hover {
+    transform: scale(1.05); 
+    opacity: 1; 
+}
   
   .about-logo{
     margin: 0 auto;
