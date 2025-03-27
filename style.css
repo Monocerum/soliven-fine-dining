@@ -423,7 +423,7 @@ footer .footer-contacts a img:hover {
     grid-template-areas: "contact1 contact2" "contact3 contact3";
     grid-template-columns: 1.5fr 1fr;
     gap: 5rem;
-    padding: 5%;
+    padding: 10% 5%;
 }
 
 .contact1 { 
