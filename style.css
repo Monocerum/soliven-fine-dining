@@ -413,6 +413,7 @@ footer .footer-contacts a img:hover {
 }
 
 /* CONTACT PAGE */
+
 .contact-body {
     background: #444444;
 }
@@ -441,22 +442,7 @@ footer .footer-contacts a img:hover {
     animation: leftSlide 1s ease-in 0s 1 normal forwards;
 }
 
-.contact-desc {
-    background: linear-gradient(96.69deg, #00314F 6.74%, #002236 104.65%);
-    border-radius: 20px;
-    color: white;
-    padding: 7%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    animation: fadeIn 2s ease-in 0s 1 normal forwards;
-    width: 100%;
-}
-
-.contact-form {
-    display: grid;
-    grid-template-areas: "form1" "form2" "form3" "form4" "form5";
-    grid-template-rows: 1fr 1fr 1fr 5fr 1fr;
-    gap: 5%;
-}
+/* GET IN TOUCH WITH US */
 
 .git-header {
     background: linear-gradient(96.48deg, #00314F 33.9%, #0070B5 118.88%);
@@ -473,6 +459,24 @@ footer .footer-contacts a img:hover {
         font-size: 1.5em;
         letter-spacing: 0.25rem;
     }
+}
+
+.contact-desc {
+    background: linear-gradient(96.69deg, #00314F 6.74%, #002236 104.65%);
+    border-radius: 20px;
+    color: white;
+    padding: 7%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+    display: grid;
+    grid-template-areas: "form1" "form2" "form3" "form4" "form5";
+    grid-template-rows: 1fr 1fr 1fr 5fr 1fr;
+    gap: 5%;
 }
 
 .form1 {
@@ -508,6 +512,13 @@ footer .footer-contacts a img:hover {
     font-weight: bold;
 }
 
+.submit-btn:hover {
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+
+/* LOCATION */
+
 .soliven-location {
     padding-bottom: 5%;
 
@@ -521,12 +532,14 @@ footer .footer-contacts a img:hover {
         padding-bottom: 5%;
     }
 
-    img {
+    iframe {
         width: 100%;
         border-radius: 2em;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 }
+
+/* MEDIA QUERIES FOR CONTACT PAGE */
 
 @media only screen and (max-width: 1250px) {
     .contact-page-body {
