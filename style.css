@@ -411,3 +411,138 @@ footer .footer-contacts a img:hover {
 		transform: translateX(0);
 	}
 }
+
+/* CONTACT PAGE */
+.contact-body {
+    background: #444444;
+}
+
+.contact-page-body {
+    display: grid;
+    grid-template-areas: "contact1 contact2" "contact3 contact3";
+    grid-template-columns: 1.5fr 1fr;
+    gap: 5rem;
+    padding: 5%;
+}
+
+.contact1 { 
+    grid-area: contact1; 
+}
+
+.contact2 { 
+    grid-area: contact2; 
+}
+
+.contact3 { 
+    grid-area: contact3; 
+}
+
+.contact-desc {
+    background: linear-gradient(96.69deg, #00314F 6.74%, #002236 104.65%);
+    border-radius: 20px;
+    color: white;
+    padding: 7%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 2s ease-in 0s 1 normal forwards;
+    width: 100%;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-areas: "form1" "form2" "form3" "form4" "form5";
+    grid-template-rows: 1fr 1fr 1fr 5fr 1fr;
+    gap: 5%;
+}
+
+.git-header {
+    background: linear-gradient(96.48deg, #00314F 33.9%, #0070B5 118.88%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5em;
+    text-align: center;
+    color: white;
+    padding: 2.5%;
+    margin-bottom: 5%;
+
+    h3 {
+        margin: 1%;
+        font-weight: bold;
+        font-size: 1.5em;
+        letter-spacing: 0.25rem;
+    }
+}
+
+.form1 {
+    background: linear-gradient(96.48deg, #00314F 33.9%, #0070B5 118.88%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5em;
+    text-align: center;
+    color: white;
+    padding: 3%;
+
+    h3 {
+        margin: 0px;
+        font-weight: bold;
+        font-size: 1.5em;
+        letter-spacing: 0.25rem;
+    }
+}
+
+.contact-form input, textarea, button {
+    border-radius: 0.3em;
+    border: none;
+    padding: 2%;
+    background-color: #D9D9D9;
+}
+
+.submit-btn {
+    border-radius: 0.5em;
+    background: linear-gradient(96.48deg, #00314F 33.9%, #0070B5 118.88%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+}
+
+.soliven-location {
+    padding-bottom: 5%;
+
+    h3 {
+        margin: 0px;
+        font-weight: bold;
+        font-size: 1.5em;
+        letter-spacing: 0.25rem;
+        color: white;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 2em;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .contact-page-body {
+        h3 {
+            font-size: 1rem;
+        }
+        
+        input, textarea, p {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .contact-page-body {
+        grid-template-areas: "contact1" "contact2" "contact3";
+        grid-template-columns: 1fr;
+    }
+    
+    .contact1, .contact2 {
+        padding: 10%;
+    }
+}

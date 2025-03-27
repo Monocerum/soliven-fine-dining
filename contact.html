@@ -14,27 +14,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
     <title>Soliven Fine Dining - Homepage</title>
 </head>
-<body>
+<body class="contact-body">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="row w-100 align-items-center nav1" id="navContents">
+            <div class="row w-100 align-items-center" id="navContents">
                 <div class="col"> 
                     <a href="#" class="navbar-brand mb-0 h1">
                         <img class="logo-img" src="assets/logo.png" alt="Soliven Fine Dining Restaurant Logo">
                     </a>
                 </div>
-                <div class="nav2">
-                    <button class="col-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="col-6 collapse navbar-collapse text-center nav3" id="navMain">
+                <button class="col-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-6 collapse navbar-collapse text-center" id="navMain">
                     <ul class="navbar-nav ms-auto"> 
-                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link active" href=#>HOME</a></li>
                         <li class="nav-item"><a class="nav-link" href=#>MENU</a></li>
                         <li class="nav-item"><a class="nav-link" href=#>GALLERY</a></li>
                         <li class="nav-item"><a class="nav-link" href=#>ABOUT</a></li>
-                        <li class="nav-item"><a class="nav-link active" href=#>CONTACT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,28 +40,31 @@
     </header>
     <main>
         <section class="contact-page-body">
-            <article class="get-in-touch">
+            <article class="get-in-touch contact1">
                 <div class="git-header">
-                    <h2>GET IN TOUCH WITH US</h2>
+                    <h3>GET IN TOUCH WITH US</h3>
                 </div>
                 <div class="contact-desc">
-                    <p class="contact-text"><img class="contact-icon" src="assets/bxs-map.png" alt="Icon of Location Pin">&nbsp;SM By the Bay, SM Mall of Asia, Pasay, Metro Manila</p>
-                    <p class="contact-text"><img class="contact-icon" src="assets/bxs-phone.png" alt="Icon of Phone">&nbsp;+639073118725 (Smart) | +639666453210 (Globe) | (045) 679-9562 (PLDT)</p>
-                    <p class="contact-text"><img class="contact-icon" src="assets/bxs-envelope.png" alt="Icon of Email">&nbsp;soliven_dining@gmail.com</p>
-                    <p class="contact-text"><img class="contact-icon" src="assets/bxs-time.png" alt="Icon of Time">&nbsp;Monday to Sunday (9:00 AM - 10:00 PM)</p>
+                    <p class="contact-text"><img class="contact-icon" src="assets/bxs-map.png" alt="Icon of Location Pin">SM By the Bay, SM Mall of Asia, Pasay, Metro Manila</p>
+                    <p class="contact-text"><img class="contact-icon" src="assets/bxs-phone.png" alt="Icon of Phone">+639073118725 (Smart) | +639666453210 (Globe) | (045) 679-9562 (PLDT)</p>
+                    <p class="contact-text"><img class="contact-icon" src="assets/bxs-envelope.png" alt="Icon of Email">soliven_dining@gmail.com</p>
+                    <p class="contact-text"><img class="contact-icon" src="assets/bxs-time.png" alt="Icon of Time">Monday to Sunday (9:00 AM - 10:00 PM)</p>
                 </div>
             </article>
-            <article class="contact-form">
-                <input type="text" name="name" id="nameInput" placeholder="Your Name">
-                <input type="email" name="email" id="emailInput" placeholder="Your Email">
-                <textarea name="message" id="messageInput" placeholder="Your Message"></textarea>
-                <button type="submit">Submit</button>
+            <article class="contact-form contact2">
+                <div class="form1">
+                    <h3>CONTACT FORM</h3>
+                </div>
+                <input type="text" name="name" id="nameInput" placeholder="Your Name" class="form2">
+                <input type="email" name="email" id="emailInput" placeholder="Your Email" class="form3">
+                <textarea name="message" id="messageInput" placeholder="Your Message" class="form4"></textarea>
+                <button type="submit" class="submit-btn form5">Submit</button>
             </article>
-            <article class="soliven-location">
+            <article class="soliven-location contact3">
                 <h3>LOCATE US</h3>
                 <img src="assets/soliven-map.png" alt="Location of Soliven Fine Dining in map">
             </article>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="logo-container">
