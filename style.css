@@ -17,6 +17,11 @@ nav {
     background-color: #00314F;
     font-size: 1.5em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(97.04deg, #00314F 38.01%, #0070B5 123.72%);
+}
+
+.no-bullets {
+    list-style-type: none;
 }
 
 .nav-item {
@@ -66,10 +71,21 @@ a {
     object-fit: cover;
 }
 
+/* Featured Food */
+
+.featured {
+    padding: 10% 0;
+}
+
 .featured-header {
     display: flex;
     justify-content: center;
     padding-top: 2%;
+}
+
+.featured-header-img {
+    width: 30%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .featured-foods {
@@ -99,8 +115,10 @@ a {
     padding: 2%;
 }
 
+/* About */
+
 .about-section {
-    padding: 5%;
+    padding: 10%;
     background: linear-gradient(130.84deg, #00314F 10%, #00090F 89.7%);
     color: white;
 }
