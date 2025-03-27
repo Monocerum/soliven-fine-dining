@@ -13,6 +13,8 @@ body {
     font-family: "Inika", serif;
 }
 
+/* NAVIGATION */
+
 nav {
     background-color: #00314F;
     font-size: 1.5em;
@@ -52,6 +54,13 @@ a {
     --bs-nav-link-color: white;
 }
 
+.nav-link.active {
+    --bs-navbar-active-color: #009AFA;
+    text-decoration: underline;
+}
+
+/* CAROUSEL */
+
 .carousel-caption-header {
     font-size: 4rem;
 }
@@ -71,7 +80,7 @@ a {
     object-fit: cover;
 }
 
-/* Featured Food */
+/* FEATURED */
 
 .featured {
     padding: 10% 0;
@@ -101,6 +110,7 @@ a {
     box-shadow: 0px 4px 10px #000000;
     height: auto;
     border-radius: 10px;
+    max-height: 750px;
 }
 
 .card-content {
@@ -115,7 +125,7 @@ a {
     padding: 2%;
 }
 
-/* About */
+/* ABOUT */
 
 .about-section {
     padding: 10%;
@@ -137,10 +147,6 @@ a {
     font-size: 1.5rem;
 }
 
-.about-section p {
-    font-size: 1rem;
-}
-
 .about-desc {
     padding: 2% 0;
 }
@@ -154,6 +160,8 @@ a {
 .soliven-images img {
     width: 100%;
 }
+
+/* CONTACT */
 
 .contact {
     width: 50%;
@@ -182,6 +190,8 @@ a {
     padding-right: 2%;
 }
 
+/* FOOTER */
+
 footer {
     background: linear-gradient(90deg, #00314F 0%, #001928 100%);
     display: grid;
@@ -205,10 +215,15 @@ footer .contact-link img {
     margin: 0 1%;
 }
 
-.nav-link.active {
-    --bs-navbar-active-color: #009AFA;
-    text-decoration: underline;
+/* RESPONSIVE STYLES */
+
+/* CONTACT PAGE */
+.contact-page-body {
+    background-image: url(assets/contact-bg.png);
+    background-repeat: no-repeat;
+    height: 100%;
 }
+
 
 /* CAROUSEL */
 @media only screen and (max-width: 1450px) {
@@ -238,17 +253,50 @@ footer .contact-link img {
     }
 }
 
-
-/* GENERAL */
-@media only screen and (max-width: 1280px) {
-    body {
-      background-color: white;
+/* FEATURED FOOD */
+@media only screen and (max-width: 1420px) {
+    .featured-foods {
+        grid-template-columns: auto auto;
+        padding: 5% 10%;
     }
-  }
+}
 
-/* CONTACT PAGE */
-.contact-page-body {
-    background-image: url(assets/contact-bg.png);
-    background-repeat: no-repeat;
-    height: 100%;
+@media only screen and (max-width: 1250px) {
+    .featured-foods {
+        grid-template-columns: auto;
+        padding: 5% 20% 10% 20%;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .featured-foods {
+        grid-template-columns: auto;
+        padding: 5% 15% 10% 15%;
+    }
+
+    #limePieCard {
+        margin-bottom: 50%;
+    }
+}
+
+/* ABOUT US */
+@media only screen and (max-width: 1420px) {
+    .soliven-images {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .soliven-images {
+        grid-template-columns: auto;
+    }
+}
+
+/* FOOTER */
+@media only screen and (max-width: 860px) {
+    footer {
+        grid-template-columns: auto;
+        gap: 2em;
+        padding: 10% 0;
+    }
 }
