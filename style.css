@@ -7,7 +7,7 @@ html {
 body {
     margin: 0px;
     padding: 0px;
-    background: linear-gradient(132.38deg, #DCF4F8 21.69%, #CDF8FF 99.77%);
+    background: white;
 }
 
 * {
@@ -608,6 +608,10 @@ footer .footer-contacts a img:hover {
 
 /*ABOUT PAGE*/
 
+.about-body{
+    background-color: #ffffff;
+}
+
 .about-main {
     display: grid;
     grid-template-rows: 100px 200px; 
@@ -616,6 +620,7 @@ footer .footer-contacts a img:hover {
     margin-top: 20px;   
     min-width: 30%;
     height: auto;
+    
 }
 
 .about-main h1{
@@ -639,6 +644,7 @@ footer .footer-contacts a img:hover {
     margin-right: 2%;
     margin-left: 2%;
     margin-top: 10px;
+    
 }
 
 .row-1 {
@@ -655,7 +661,7 @@ footer .footer-contacts a img:hover {
     text-align: left;
     background-color: #00314F;
     color: white;
-    min-width: 7%;
+    min-width: 8%;
     width: 10%;
     text-align: center;
     padding: 10px;
@@ -727,8 +733,7 @@ footer .footer-contacts a img:hover {
   .row-3 h2 {
     background-color: #00314F;
     color: white;
-    min-width: 30%;
-    width: 25%;
+    min-width: 40%;
     padding: 10px;
     border-radius: 15px;
     font-family: 'Inika';
@@ -769,8 +774,7 @@ footer .footer-contacts a img:hover {
     grid-column: span 5; 
     background-color: #00314F;
     color: white;
-    min-width: 7%;
-    width: 10%;
+    min-width: 15%;
     text-align: center;
     padding: 10px;
     border-radius: 20px;
@@ -778,6 +782,22 @@ footer .footer-contacts a img:hover {
     margin-bottom: 20px;
     
 }
+
+.row-4 img {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto;
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+
+@media (max-width: 768px) {
+    .row-4 img {
+        max-width: 150px; 
+    }
+}
+
 
 .row-4 .names{
     text-align: center;   
@@ -816,8 +836,7 @@ footer .footer-contacts a img:hover {
   .row-5 h2 {
     background-color: #00314F;
     color: white;
-    min-width: 7%;
-    width: 10%;
+    min-width: 15%;
     text-align: center;
     padding: 10px;
     border-radius: 20px;
