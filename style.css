@@ -15,6 +15,11 @@ body {
 
 /* NAVIGATION */
 
+header {
+    display: grid;
+    grid-template-areas: inherit;
+}
+
 nav {
     background-color: #00314F;
     font-size: 1.5em;
@@ -99,7 +104,7 @@ a {
 
 .featured-foods {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-areas: "food1 food2 food3";
     margin: 5%;
     gap: 5%;
 }
@@ -256,21 +261,21 @@ footer .contact-link img {
 /* FEATURED FOOD */
 @media only screen and (max-width: 1420px) {
     .featured-foods {
-        grid-template-columns: auto auto;
+        grid-template-areas: "food1 food2" "food3 food3";
         padding: 5% 10%;
     }
 }
 
 @media only screen and (max-width: 1250px) {
     .featured-foods {
-        grid-template-columns: auto;
+        grid-template-areas: "food1" "food2" "food3";
         padding: 5% 20% 10% 20%;
     }
 }
 
 @media only screen and (max-width: 790px) {
     .featured-foods {
-        grid-template-columns: auto;
+        grid-template-areas: "food1" "food2" "food3";
         padding: 5% 15% 10% 15%;
     }
 
