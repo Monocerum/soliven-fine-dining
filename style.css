@@ -604,6 +604,7 @@ a {
     }
 
 
+    /**/
     .about-main {
         display: flex;
         flex-direction: column;
@@ -617,6 +618,11 @@ a {
         font-size: 64px;
         letter-spacing: 0.08em;
     }
+
+    .text-justify {
+        text-align: justify;
+    }
+    
 
     .line {
         width: 100%;
@@ -676,6 +682,7 @@ a {
 
     .values-sublist {
         font-size: 25px;
+        font-weight: 400;
         text-align: justify;
     }
 
