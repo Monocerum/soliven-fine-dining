@@ -329,6 +329,20 @@ a {
         }
     }
 
+    @media only screen and (max-width: 750px) {
+        .featured-foods {
+            grid-template-areas: "food1" "food2" "food3";
+            padding: 5% 10% 10% 10%;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .featured-foods {
+            grid-template-areas: "food1" "food2" "food3";
+            padding: 5% 5% 10% 5%;
+        }
+    }
+
     /* ABOUT US */
     @media only screen and (max-width: 1420px) {
         .soliven-images {
