@@ -728,6 +728,7 @@ a {
     }
 
     @media (max-width: 768px) {
+        
         .about-main h1 {
             font-size: 42px;
         }
@@ -752,7 +753,15 @@ a {
         .values-sublist {
             font-size: 20px;
         }
+
+        .col-md-4 {
+            flex: 0 0 50%; 
+            max-width: 50%;
+        }
+        
     }
+
+    
 
     @media (max-width: 480px) {
 
