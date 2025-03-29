@@ -317,7 +317,7 @@ a {
     /* FEATURED FOOD */
     @media only screen and (max-width: 1420px) {
         .featured-foods {
-            grid-template-areas: "food1 food2" "food3";
+            grid-template-areas: "food1 food2" "food3 food3";
             padding: 5% 10%;
         }
     }
@@ -329,27 +329,10 @@ a {
         }
     }
 
-    @media only screen and (max-width: 790px) {
-        .featured-foods {
-            grid-template-areas: "food1" "food2" "food3";
-            padding: 5% 15% 10% 15%;
-        }
-
-        #limePieCard {
-            margin-bottom: 50%;
-        }
-    }
-
-    @media only screen and (max-width: 600px) {
-        .featured-foods {
-            padding: 5% 5% 10% 5%;
-        }
-    }
-
     /* ABOUT US */
     @media only screen and (max-width: 1420px) {
         .soliven-images {
-            grid-template-areas: "about1 about2" "about3";
+            grid-template-areas: "about1 about2" "about3 about3";
         }
     }
 
