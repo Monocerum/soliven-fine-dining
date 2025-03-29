@@ -317,7 +317,7 @@ a {
     /* FEATURED FOOD */
     @media only screen and (max-width: 1420px) {
         .featured-foods {
-            grid-template-areas: "food1 food2" "food3";
+            grid-template-areas: "food1 food2" "food3 food3";
             padding: 5% 10%;
         }
     }
@@ -349,7 +349,7 @@ a {
     /* ABOUT US */
     @media only screen and (max-width: 1420px) {
         .soliven-images {
-            grid-template-areas: "about1 about2" "about3";
+            grid-template-areas: "about1 about2" "about3 about3";
         }
     }
 
