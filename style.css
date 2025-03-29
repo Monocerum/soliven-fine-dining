@@ -593,31 +593,11 @@ a {
         position: relative; 
         display: grid;
         justify-content: center;
-        align-items: center;
-        text-align: center;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        animation: fadeIn 2s ease-in 0s 1 normal forwards;
-    }
-
-    .centered-main-courses {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-
-        transform: translate(-50%, -30%);
-
-        font-family: 'Koh Santepheap';
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 69px;
-        letter-spacing: 0.08em;
-
-        color: #002132;
-        text-align: center;
-        white-space: nowrap;
 
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         animation: fadeIn 2s ease-in 0s 1 normal forwards;
+
+        padding: 5%;
     }
 
     /* Main Courses Grid Layout */
@@ -647,7 +627,7 @@ a {
     }
 
     .menu-description, .menu-description-tray {
-        font-size: 16px;
+        font-size: 16px;a
         font-family: var(--primary-font);
         padding-bottom: 2%;
         letter-spacing: 0.08em;
