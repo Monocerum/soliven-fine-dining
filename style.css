@@ -1604,6 +1604,10 @@ a:hover {
             margin-top: 20%;
             margin-bottom: -15%;
         }
+
+        .btns .btn {
+           font-size: 50%;
+        }
         
     }
 
