@@ -83,6 +83,7 @@ a:hover {
     --bs-nav-link-color: white;
     --bs-navbar-nav-link-padding-x: 1rem;
     text-align: end;
+    --bs-nav-link-font-size: 1.2rem;
 }
 
 .nav-link.active {
@@ -659,7 +660,10 @@ a:hover {
         animation: fadeIn 2s ease-in 0s 1 normal forwards;
     }
 
-    /* Main Courses Grid Layout */
+    #mainCourseHeader {
+        padding-top: 10%;
+    }
+
     .menu-container {
         gap: 5%;
         max-width: 80%;
@@ -692,6 +696,8 @@ a:hover {
         font-family: var(--primary-font);
         padding-bottom: 2%;
         letter-spacing: 0.08em;
+        text-align: justify;
+        opacity: 75%;
     }
 
     .menu-title {
@@ -723,12 +729,13 @@ a:hover {
         padding-bottom: 0;
     }
 
-    .menu-extra, .menu-extra-tray {
+    .menu-extra {
         font-size: 20px;
         font-family: var(--primary-font);
         line-height: 26px;
         letter-spacing: 0.08em;
         margin-top: 3%;
+        text-align: justify;
     }
 
     .menu-subtitle, .menu-subtitle-tray {
@@ -764,12 +771,10 @@ a:hover {
 
     .desserts .menu-item {
         justify-content: end;
-        padding: 0 5%;
     }
     
     .drinks .menu-item {
         justify-content: start;
-        padding: 0 5%;
     }
 
     /* RESPONSIVE STYLES FOR MENU PAGE */
@@ -795,14 +800,31 @@ a:hover {
         .menu-item {
             grid-template-columns: 1fr;
             justify-items: center;
+            margin-bottom: 5%;
+            padding-bottom: 10%;
         }
+
         .menu-item-header {
             flex-direction: column;
             text-align: center;
         }
+
         .menu-item-header .menu-price {
             font-size: 2em;
             text-align: center;
+        }
+        
+        .menu-image img {
+            padding: 1em;
+        }
+
+        .menu-item-header .menu-price, .menu-item-header .menu-name {
+            padding-bottom: 0.2em;
+            margin: 0; 
+        }
+
+        .menu-extra {
+            margin: 0;
         }
     }
     
@@ -810,12 +832,15 @@ a:hover {
         .menu-title, .menu-title-tray {
             font-size: 42px;
         }
+
         .menu-subtitle, .menu-subtitle-tray {
             font-size: 32px;
         }
-        .menu-extra, .menu-extra-tray {
+
+        .menu-extra {
             font-size: 18px;
         }
+
         .menu-image img, .menu-body img {
             width: 250px;
             height: 250px;
@@ -845,8 +870,25 @@ a:hover {
         }
     
         .menu-body img {
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
+        }
+        
+        .menu-item {
+            padding: 5% 10%;
+        }
+
+        .menu-description {
+            font-size: 0.8em;
+        }
+
+        .menu-extra {
+            font-size: 1em;
+        }
+
+        .menu-header-img {
+            width: 80%;
+            margin: 0 auto;
         }
     }
     
@@ -868,8 +910,25 @@ a:hover {
         }
     
         .menu-body img {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .menu-description {
+            font-size: 0.75em;
+        }
+
+        .menu-extra {
+            font-size: 0.9em;
+        }
+
+        .menu-item {
+            padding: 2em 2em 5em 2em;
+        }
+
+        .menu-header-img {
+            width: 60%;
+            margin: 0 auto;
         }
     }
 
