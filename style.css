@@ -588,134 +588,190 @@ a {
         }
     }
 
-    /* MENU PAGE */
-    .categories-header-img {
-        position: relative; 
-        display: grid;
-        justify-content: center;
+/* MENU PAGE */
+.categories-header-img {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    animation: fadeIn 2s ease-in 0s 1 normal forwards;
+    padding: 5%;
+}
 
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        animation: fadeIn 2s ease-in 0s 1 normal forwards;
+/* Main Courses Grid Layout */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    max-width: 80%;
+    margin: auto;
+    background: var(--menu-gradient);
+    border-radius: 2em;
+    padding: 5%;
+    color: white;
+    align-items: center;
+    animation: fadeInDown 1.5s ease-out forwards;
+}
 
-        padding: 5%;
-    }
+.menu-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 1% 0;
+    margin: 0 5%;
+    animation: fadeInDown 1.5s ease-out forwards;
+}
 
-    /* Main Courses Grid Layout */
-    .menu-container {
-        gap: 5%;
-        max-width: 80%;
-        margin: auto;
-        background: var(--menu-gradient);
-        border-radius: 2em;
-        padding: 5%;
-        color: white;
-        align-items: center;
+.seafood-item1 {
+    padding-bottom: 5%;
+}
 
-        animation: fadeInDown 1.5s ease-out forwards;
-    }
+.menu-description, .menu-description-tray {
+    font-size: 16px;
+    font-family: var(--primary-font);
+    padding-bottom: 2%;
+    letter-spacing: 0.08em;
+}
 
+.menu-title, .menu-title-tray {
+    font-size: 54px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-image img, .menu-body img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100em;
+    padding: 2%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-item-header .menu-price {
+    font-size: 1.8em;
+    padding-bottom: 5%;
+    text-align: right;
+}
+
+.menu-extra, .menu-extra-tray {
+    font-size: 20px;
+    font-family: var(--primary-font);
+    line-height: 26px;
+    letter-spacing: 0.08em;
+    margin-top: 3%;
+}
+
+.menu-subtitle, .menu-subtitle-tray {
+    font-size: 40px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    text-shadow: var(--default-shadow);
+    color: rgb(174, 227, 255);
+    margin: 10px 0;
+}
+
+.desserts .menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+}
+
+.desserts .menu-item {
+    width: 100%;
+    text-align: right;
+}
+
+.menu-body {
+    margin: 5% 0;
+}
+
+/* RESPONSIVE STYLES FOR MENU PAGE */
+@media (max-width: 1450px) {
     .menu-item {
-        display: grid;
-        grid-template-areas: "seafood-item-item1 seafood-item-item2";
-        align-items: center;
-        justify-content: center;
-        gap: 5%;
-        padding: 1% 0;
-        margin: 0 5%;
-
-        animation: fadeInDown 1.5s ease-out forwards;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
-
-    .seafood-item1 {
-        padding-bottom: 5%;
-    }
-
-    .menu-description, .menu-description-tray {
-        font-size: 16px;a
-        font-family: var(--primary-font);
-        padding-bottom: 2%;
-        letter-spacing: 0.08em;
-    }
-
-    .menu-title, .menu-title-tray {
-        font-size: 54px;
-        font-family: var(--primary-font);
-        font-weight: bold;
-        letter-spacing: 0.08em;
-        text-align: center;
-        margin-bottom: 20px;    
-    }
-
-    .menu-image img, .menu-body img {
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 100em;
-        padding: 2%;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    }
-
     .menu-item-header {
-        display: grid;
-        grid-template-areas: "menu-subtitle1 menu-subtitle2";
+        flex-direction: column;
+        text-align: center;
     }
-
     .menu-item-header .menu-price {
-        justify-self: end;
+        font-size: 2em;
+        text-align: center;
     }
+}
 
-    .menu-extra, .menu-extra-tray {
-        font-size: 20px;
-        font-family: var(--primary-font);
-        line-height: 26px;
-        letter-spacing: 0.08em;
-        margin-top: 3%;
+@media (max-width: 1024px) {
+    .menu-title, .menu-title-tray {
+        font-size: 42px;
     }
-
     .menu-subtitle, .menu-subtitle-tray {
-        font-size: 40px;
-        font-family: var(--primary-font);
-        font-weight: bold;
-        text-shadow: var(--default-shadow);
-        color: rgb(174, 227, 255);
-        margin: 10px 0;
+        font-size: 32px;
     }
-
-    .desserts {
-        .menu-container {
-            display: grid;
-            justify-content: end;
-            gap: 0;
-        }
-
-        .menu-item {
-            justify-self: end;
-            width: 100%;
-        }
+    .menu-extra, .menu-extra-tray {
+        font-size: 18px;
     }
-
-    .menu-body {
-        margin: 5% 0;
+    .menu-image img, .menu-body img {
+        width: 250px;
+        height: 250px;
     }
+}
 
-    /* RESPONSIVE STYLES FOR MENU PAGE */
-    @media (max-width: 1450px) {
-        .menu-item {
-            grid-template-areas: "seafood-item-item1" "seafood-item-item2";
-            justify-items: center;
-        }
-
-        .menu-item-header {
-            grid-template-areas: "menu-subtitle1" "menu-subtitle2";
-            justify-content: center;
-        }
-
-        .menu-item-header .menu-price {
-            justify-self: center;
-            font-size: 2em;
-            padding-bottom: 5%;
-        }
+@media (max-width: 768px) {
+    .menu-container {
+        max-width: 90%;
+        padding: 5% 3%;
     }
+    .menu-title, .menu-title-tray {
+        font-size: 36px;
+    }
+    .menu-subtitle, .menu-subtitle-tray {
+        font-size: 28px;
+    }
+    .menu-item-header {
+        text-align: center;
+    }
+    .menu-item-header .menu-price {
+        font-size: 1.5em;
+    }
+    .menu-image img, .menu-body img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-title, .menu-title-tray {
+        font-size: 28px;
+    }
+    .menu-subtitle, .menu-subtitle-tray {
+        font-size: 24px;
+    }
+    .menu-extra, .menu-extra-tray {
+        font-size: 16px;
+    }
+    .menu-item-header .menu-price {
+        font-size: 1.2em;
+    }
+    .menu-image img, .menu-body img {
+        width: 150px;
+        height: 150px;
+    }
+}
 
     /* ABOUT PAGE */
     .about-main {
