@@ -1372,6 +1372,10 @@ a:hover {
         text-align: justify;
     }
 
+    #vission{
+        scroll-margin-top: 30vh;
+    }
+
     .line {
         width: 100%;
         border-top: 1px solid black;
@@ -1465,6 +1469,37 @@ a:hover {
     .staff-container {
         animation: topFadeIn 2s ease 0s 1 normal forwards;
     }
+
+
+    .btns {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: white; 
+        padding: 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+    
+
+    .btns .btn {
+        margin: 0 10px;
+        padding: 8px 5px;
+        text-decoration: none;
+        color: #333;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+    
+    .btns .btn:hover {
+        background-color: var(--secondarycolor);
+        color: white;
+    }
+    
+
 
     @media (max-width: 768px) {
 
