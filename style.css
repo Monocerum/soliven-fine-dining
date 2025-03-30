@@ -618,14 +618,15 @@ a:hover {
     }
 
     .menu-container {
-        gap: 5%;
         max-width: 80%;
         margin: auto;
         background: var(--main-gradient);
+        gap: 5%;
         border-radius: 2em;
         padding: 5%;
         color: white;
         align-items: center;
+        animation: leftSlide 1s ease-in 0s 1 normal forwards;
     }
 
     .menu-item {
@@ -1026,7 +1027,7 @@ a:hover {
         }
     
     }
-    
+
     @media (max-width: 480px) {
         .container {
             padding: 50px;
