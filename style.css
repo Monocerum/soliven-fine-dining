@@ -809,6 +809,13 @@ a {
         opacity: 1;
     }
 
+    .logo-page{
+        max-width: 17%;
+        margin-top: 5%;
+    }
+
+   
+
     @keyframes fadeInDown {
         0% {
             opacity: 0;
@@ -821,6 +828,10 @@ a {
     }
 
     @media (max-width: 768px) {
+
+        .container {
+            padding: 50px;
+        }
         .about-main h1 {
             font-size: 42px;
         }
@@ -849,12 +860,18 @@ a {
         .values-sublist {
             font-size: 20px;
         }
+
+        .logo-page{
+            max-width: 40%;
+            margin-top: 10%;
+        }
+    
     }
 
 
     @media (max-width: 480px) {
         .container {
-            padding: 10px;
+            padding: 50px;
         }
         .about-main h1 {
             font-size: 32px;
@@ -884,4 +901,11 @@ a {
         .values-sublist {
             font-size: 12px;
         }
+
+        .logo-page{
+            max-width: 70%;
+            margin-top: 20%;
+            margin-bottom: -15%;
+        }
+        
     }
