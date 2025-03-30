@@ -65,11 +65,6 @@ a:hover {
     --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
 }
 
-.logo-img:hover {
-    transition: transform .2s;
-    transform: scale(1.1);
-}
-
 .logo-img {
     height: 50px;
     margin: 0.5em 1em;
@@ -899,6 +894,7 @@ a:hover {
         transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, z-index 0.2s;
         position: relative;
         z-index: 1; 
+        object-fit: cover;
     }
     
     
@@ -944,7 +940,7 @@ a:hover {
             "Food8";
             grid-template-columns: 1fr;
             gap: 10px; 
-            padding: 10px;
+            padding: 10;
         }
     }
     
@@ -1354,10 +1350,6 @@ a:hover {
     /* ABOUT PAGE */
     .about-main {
         display: grid;
-        grid-template-areas:
-            "header"
-            "content"
-            "staff";
         grid-template-columns: 1fr;
         justify-items: center;
         margin-top: 100px;
@@ -1365,7 +1357,6 @@ a:hover {
     }
 
     .about-main h1 {
-        grid-area: header;
         font-weight: 700;
         font-size: 64px;
         letter-spacing: 0.08em;
@@ -1373,7 +1364,6 @@ a:hover {
 
     .text-justify {
         text-align: justify;
-        grid-area: content;
     }
 
     .line {
@@ -1393,7 +1383,6 @@ a:hover {
     }
 
     .staff-section {
-        grid-area: staff;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
@@ -1450,7 +1439,7 @@ a:hover {
         opacity: 1;
     }
 
-    .logo-page {
+    .logo-page{
         max-width: 17%;
         margin-top: 5%;
     }
@@ -1472,6 +1461,7 @@ a:hover {
     }
 
     @media (max-width: 768px) {
+
         .container {
             padding: 50px;
         }
@@ -1504,10 +1494,11 @@ a:hover {
             font-size: 20px;
         }
 
-        .logo-page {
+        .logo-page{
             max-width: 40%;
             margin-top: 10%;
         }
+    
     }
 
     @media (max-width: 480px) {
@@ -1543,11 +1534,12 @@ a:hover {
             font-size: 12px;
         }
 
-        .logo-page {
+        .logo-page{
             max-width: 70%;
             margin-top: 20%;
             margin-bottom: -15%;
         }
+        
     }
 
     @keyframes fadeInDown {
@@ -1558,5 +1550,5 @@ a:hover {
         100% {
             opacity: 1;
             transform: translateY(0);
-            }
         }
+    }
