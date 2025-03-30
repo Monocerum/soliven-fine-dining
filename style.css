@@ -513,9 +513,14 @@ a:hover {
 
     .contact-form {
         display: grid;
-        grid-template-areas: "form1" "form2" "form3" "form4" "form5";
-        grid-template-rows: 1fr 1fr 1fr 5fr 1fr;
+        grid-template-areas: "form1" "label1" "form2" "label2" "form3" "label3" "form4" "form5";
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 5fr 1fr;
         gap: 5%;
+    }
+
+    .form-label {
+        align-content: end;
+        color: white;
     }
 
     .form1 {
@@ -534,6 +539,10 @@ a:hover {
         }
     }
 
+    .form4 {
+        margin-bottom: 5%;  
+    }
+
     .contact-form input, textarea, button {
         border-radius: 0.3em;
         border: none;
@@ -549,6 +558,7 @@ a:hover {
         margin: 0 auto;
         color: white;
         font-weight: bold;
+        font-size: 1.5em;
     }
 
     .submit-btn:hover {
@@ -592,7 +602,7 @@ a:hover {
         }
     }
 
-    @media only screen and (max-width: 790px) {
+    @media only screen and (max-width: 1020px) {
         .contact-page-body {
             grid-template-areas: "contact1" "contact2" "contact3";
             grid-template-columns: 1fr;
@@ -847,7 +857,7 @@ a:hover {
     }
     
     @media (max-width: 480px) {
-        .menu-title, .menu-title-tray {
+        .menu-title {
             font-size: 28px;
         }
     
