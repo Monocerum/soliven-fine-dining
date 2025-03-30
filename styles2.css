@@ -637,6 +637,7 @@ a {
         grid-template-areas: "seafood-item-item1 seafood-item-item2";
         align-items: center;
         justify-content: center;
+        justify-items: center;
         gap: 5%;
         padding: 1% 0;
         margin: 0 5%;

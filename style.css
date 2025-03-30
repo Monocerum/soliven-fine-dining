@@ -1,8 +1,16 @@
 :root {
     --primary-font: 'Inika', serif;
     --secondary-font: "Koh Santepheap", serif;
-    --menu-gradient: radial-gradient(50% 50% at 50% 50%, #0070B5 0%, #00314F 100%);
     --default-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --bs-link-hover-color-rgb: var(--tertiarycolor);
+    --primarycolor: white;
+    --secondarycolor: #00314F;
+    --tertiarycolor: rgb(174, 227, 255);
+    --complementarycolor: #0070B5;
+    --menu-gradient: radial-gradient(50% 50% at 50% 50%, var(--complementarycolor) 0%, var(--secondarycolor) 100%);
+    --main-gradient: radial-gradient(50% 50% at 50% 50%, var(--complementarycolor) 0%, var(--secondarycolor) 100%);
+    --linear-gradient: linear-gradient(97.04deg, #00314F 38.01%, #0070B5 123.72%);
+    --card-bgcolor: rgba(255, 255, 255, 0.3);
 }
 
 html {
@@ -32,8 +40,8 @@ nav {
     font-size: 1.5em;
     display: grid;
     grid-template-areas: "nav1 nav2 nav3";
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background: linear-gradient(97.04deg, #00314F 38.01%, #0070B5 123.72%);
+    filter: var(--default-shadow);
+    background: var(--linear-gradient);
     z-index: 1;
     position: fixed;
     top: 0;
@@ -51,6 +59,10 @@ nav {
 a {
     text-decoration: none;
     color: white;
+}
+
+a:hover {
+    --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
 }
 
 .logo-img {
@@ -127,9 +139,9 @@ a {
 }
 
 .featured-food-card {
-    background: rgba(255, 255, 255, 0.3);
-    border: 2px solid #a7ddff;
-    box-shadow: 0px 4px 10px #000000;
+    background: var(--card-bgcolor);
+    border: 2px solid var(--tertiarycolor);
+    box-shadow: 0px 4px 10px black;
     height: auto;
     border-radius: 1em;
     max-height: 750px;
@@ -170,8 +182,8 @@ a {
 
 .about-section {
     padding: 10%;
-    background: linear-gradient(130.84deg, #00314F 10%, #00090F 89.7%);
-    color: white;
+    background: var(--linear-gradient);
+    color: var(--primarycolor);
 
     h2, img, p, article, div {
         animation: fadeIn 2s ease-in 0s 1 normal forwards;
@@ -180,7 +192,9 @@ a {
 
     .about-header {
         font-size: 2.5rem;
+        font-weight: bold;
         padding: 2%;
+        letter-spacing: 5px;
     }
 
     .about-section .soliven-logo {
@@ -197,6 +211,7 @@ a {
 
         p {
             text-align: justify !important;
+            font-size: 1.2rem;
         }
     }
 
@@ -209,7 +224,7 @@ a {
     .soliven-images img {
         width: 100%;
         border-radius: 1em;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: var(--default-shadow);
     }
 
     .soliven-images img:hover {
@@ -254,11 +269,11 @@ a {
     /* FOOTER */
 
     footer {
-        background: linear-gradient(90deg, #00314F 0%, #001928 100%);
+        background: var(--linear-gradient);
         display: grid;
         text-align: center;
         grid-template-areas: "footer1 footer2 footer3";
-        color: white;
+        color: var(--primarycolor);
         padding: 1% 0;
     }
 
@@ -588,190 +603,229 @@ a {
         }
     }
 
-/* MENU PAGE */
-.categories-header-img {
-    position: relative;
-    display: grid;
-    justify-content: center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    animation: fadeIn 2s ease-in 0s 1 normal forwards;
-    padding: 5%;
-}
-
-/* Main Courses Grid Layout */
-.menu-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5%;
-    max-width: 80%;
-    margin: auto;
-    background: var(--menu-gradient);
-    border-radius: 2em;
-    padding: 5%;
-    color: white;
-    align-items: center;
-    animation: fadeInDown 1.5s ease-out forwards;
-}
-
-.menu-item {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    padding: 1% 0;
-    margin: 0 5%;
-    animation: fadeInDown 1.5s ease-out forwards;
-}
-
-.seafood-item1 {
-    padding-bottom: 5%;
-}
-
-.menu-description, .menu-description-tray {
-    font-size: 16px;
-    font-family: var(--primary-font);
-    padding-bottom: 2%;
-    letter-spacing: 0.08em;
-}
-
-.menu-title, .menu-title-tray {
-    font-size: 54px;
-    font-family: var(--primary-font);
-    font-weight: bold;
-    letter-spacing: 0.08em;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.menu-image img, .menu-body img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 100em;
-    padding: 2%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.menu-item-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.menu-item-header .menu-price {
-    font-size: 1.8em;
-    padding-bottom: 5%;
-    text-align: right;
-}
-
-.menu-extra, .menu-extra-tray {
-    font-size: 20px;
-    font-family: var(--primary-font);
-    line-height: 26px;
-    letter-spacing: 0.08em;
-    margin-top: 3%;
-}
-
-.menu-subtitle, .menu-subtitle-tray {
-    font-size: 40px;
-    font-family: var(--primary-font);
-    font-weight: bold;
-    text-shadow: var(--default-shadow);
-    color: rgb(174, 227, 255);
-    margin: 10px 0;
-}
-
-.desserts .menu-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0;
-}
-
-.desserts .menu-item {
-    width: 100%;
-    text-align: right;
-}
-
-.menu-body {
-    margin: 5% 0;
-}
-
-/* RESPONSIVE STYLES FOR MENU PAGE */
-@media (max-width: 1450px) {
-    .menu-item {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-    .menu-item-header {
-        flex-direction: column;
+    /* MENU PAGE */
+    .categories-header-img {
+        display: grid;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        filter: var(--default-shadow);
+        animation: fadeIn 2s ease-in 0s 1 normal forwards;
     }
-    .menu-item-header .menu-price {
-        font-size: 2em;
-        text-align: center;
-    }
-}
 
-@media (max-width: 1024px) {
-    .menu-title, .menu-title-tray {
-        font-size: 42px;
-    }
-    .menu-subtitle, .menu-subtitle-tray {
-        font-size: 32px;
-    }
-    .menu-extra, .menu-extra-tray {
-        font-size: 18px;
-    }
-    .menu-image img, .menu-body img {
-        width: 250px;
-        height: 250px;
-    }
-}
-
-@media (max-width: 768px) {
+    /* Main Courses Grid Layout */
     .menu-container {
-        max-width: 90%;
-        padding: 5% 3%;
+        gap: 5%;
+        max-width: 80%;
+        margin: auto;
+        background: var(--main-gradient);
+        border-radius: 2em;
+        padding: 5%;
+        color: white;
+        align-items: center;
     }
-    .menu-title, .menu-title-tray {
-        font-size: 36px;
-    }
-    .menu-subtitle, .menu-subtitle-tray {
-        font-size: 28px;
-    }
-    .menu-item-header {
-        text-align: center;
-    }
-    .menu-item-header .menu-price {
-        font-size: 1.5em;
-    }
-    .menu-image img, .menu-body img {
-        width: 200px;
-        height: 200px;
-    }
-}
 
-@media (max-width: 480px) {
-    .menu-title, .menu-title-tray {
-        font-size: 28px;
+    .menu-item {
+        display: grid;
+        grid-template-areas: "seafood-item-item1 seafood-item-item2";
+        grid-template: "1fr 3fr";
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 5%;
+        padding: 1% 0;
+        width: 100%;
     }
-    .menu-subtitle, .menu-subtitle-tray {
-        font-size: 24px;
+
+    .seafood-item1 {
+        padding-bottom: 5%;
     }
-    .menu-extra, .menu-extra-tray {
+
+    .menu-description {
         font-size: 16px;
+        font-family: var(--primary-font);
+        padding-bottom: 2%;
+        letter-spacing: 0.08em;
     }
+
+    .menu-title {
+        font-size: 54px;
+        font-family: var(--primary-font);
+        font-weight: bold;
+        letter-spacing: 0.08em;
+        text-align: center;
+        margin-bottom: 20px;    
+    }
+
+    .menu-body img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 100em;
+        padding: 2%;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .menu-item-header {
+        display: grid;
+        grid-template-areas: "menu-subtitle1 menu-subtitle2";
+    }
+
     .menu-item-header .menu-price {
-        font-size: 1.2em;
+        justify-self: end;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
-    .menu-image img, .menu-body img {
-        width: 150px;
-        height: 150px;
+
+    .menu-extra, .menu-extra-tray {
+        font-size: 20px;
+        font-family: var(--primary-font);
+        line-height: 26px;
+        letter-spacing: 0.08em;
+        margin-top: 3%;
     }
-}
+
+    .menu-subtitle, .menu-subtitle-tray {
+        font-size: 40px;
+        font-family: var(--primary-font);
+        font-weight: bold;
+        text-shadow: var(--default-shadow);
+        color: var(--tertiarycolor);
+        margin: 10px 0;
+    }
+
+    .desserts {
+        .menu-container {
+            display: grid;
+            justify-content: end;
+            gap: 0;
+        }
+
+        .menu-item {
+            justify-self: end;
+            width: 100%;
+        }
+    }
+
+    .menu-body {
+        margin: 5% 0;
+    }
+
+    .menu-item-header .menu-price {
+        font-size: 1.8em;
+        text-align: right;
+    }
+
+    .desserts .menu-item {
+        justify-content: end;
+        padding: 0 5%;
+    }
+    
+    .drinks .menu-item {
+        justify-content: start;
+        padding: 0 5%;
+    }
+
+    /* RESPONSIVE STYLES FOR MENU PAGE */
+    @media (max-width: 1450px) {
+        .menu-item {
+            grid-template-areas: "seafood-item-item1" "seafood-item-item2";
+            justify-items: center;
+        }
+
+        .menu-item-header {
+            grid-template-areas: "menu-subtitle1" "menu-subtitle2";
+            justify-content: center;
+        }
+
+        .menu-item-header .menu-price {
+            justify-self: center;
+            font-size: 2em;
+            padding-bottom: 5%;
+        }
+    }
+
+    @media (max-width: 1450px) {
+        .menu-item {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+        .menu-item-header {
+            flex-direction: column;
+            text-align: center;
+        }
+        .menu-item-header .menu-price {
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .menu-title, .menu-title-tray {
+            font-size: 42px;
+        }
+        .menu-subtitle, .menu-subtitle-tray {
+            font-size: 32px;
+        }
+        .menu-extra, .menu-extra-tray {
+            font-size: 18px;
+        }
+        .menu-image img, .menu-body img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .menu-container {
+            max-width: 90%;
+            padding: 5% 3%;
+        }
+    
+        .menu-title {
+            font-size: 36px;
+        }
+    
+        .menu-subtitle {
+            font-size: 28px;
+        }
+        
+        .menu-item-header {
+            text-align: center;
+        }
+    
+        .menu-item-header .menu-price {
+            font-size: 1.5em;
+        }
+    
+        .menu-body img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .menu-title, .menu-title-tray {
+            font-size: 28px;
+        }
+    
+        .menu-subtitle {
+            font-size: 24px;
+        }
+    
+        .menu-extra {
+            font-size: 16px;
+        }
+    
+        .menu-item-header .menu-price {
+            font-size: 1.2em;
+        }
+    
+        .menu-body img {
+            width: 150px;
+            height: 150px;
+        }
+    }
 
     /* ABOUT PAGE */
     .about-main {
