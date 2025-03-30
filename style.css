@@ -91,6 +91,12 @@ a:hover {
     text-decoration: underline;
 }
 
+.navbar.navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: fixed;
+}
+
 /* CAROUSEL */
 .carousel {
     animation: topFadeIn 2s ease 0s 1 normal forwards;
@@ -598,7 +604,7 @@ a:hover {
     }
 
     #mainCourseHeader {
-        padding-top: 10%;
+        padding-top: 45%;
     }
 
     .menu-container {
