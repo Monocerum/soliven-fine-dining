@@ -1092,6 +1092,16 @@ a:hover {
         }
     }
 
+    @media only screen and (max-width: 500px) {
+        .contact-page-body {
+            margin-top: 20%;
+        }
+        
+        .contact1, .contact2 {
+            padding: 10%;
+        }
+    }
+
     /* MENU PAGE */
     .categories-header-img {
         display: grid;
