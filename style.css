@@ -983,9 +983,21 @@ a:hover {
         margin-top: 5%;
     }
 
-   
+    .content-container {
+        animation: fadeIn 2s ease-in 0s 1 normal forwards;
+    }
 
-    
+    .about-img-container-right {
+        animation: rightSlide 2s ease-in 0s 1 normal forwards;
+    }
+
+    .about-img-container-left {
+        animation: leftSlide 2s ease-in 0s 1 normal forwards;
+    }
+
+    .staff-container {
+        animation: topFadeIn 2s ease 0s 1 normal forwards;
+    }
 
     @media (max-width: 768px) {
 
