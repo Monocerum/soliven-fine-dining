@@ -451,53 +451,6 @@ a:hover {
         }
     }
 
-    /* ANIMATION KEYFRAMES */
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @keyframes topFadeIn {
-        0% {
-            opacity: 0;
-            transform: translateY(-50px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    @keyframes leftSlide {
-        0% {
-            opacity: 0;
-            transform: translateX(-250px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes rightSlide {
-        0% {
-            opacity: 0;
-            transform: translateX(250px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
     /* CONTACT PAGE */
 
     .contact-body {
@@ -1031,16 +984,7 @@ a:hover {
 
    
 
-    @keyframes fadeInDown {
-        0% {
-            opacity: 0;
-            transform: translateY(-20px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+    
 
     @media (max-width: 768px) {
 
@@ -1082,8 +1026,7 @@ a:hover {
         }
     
     }
-
-
+    
     @media (max-width: 480px) {
         .container {
             padding: 50px;
@@ -1123,4 +1066,62 @@ a:hover {
             margin-bottom: -15%;
         }
         
+    }
+
+    /* ANIMATION KEYFRAMES */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes topFadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes leftSlide {
+        0% {
+            opacity: 0;
+            transform: translateX(-250px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes rightSlide {
+        0% {
+            opacity: 0;
+            transform: translateX(250px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
