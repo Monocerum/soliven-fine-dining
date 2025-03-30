@@ -6,7 +6,7 @@
     --primarycolor: white;
     --secondarycolor: #00314F;
     --tertiarycolor: rgb(174, 227, 255);
-    --complementarycolor: #0070B5;
+    --complementarycolor: #0070B5; 
     --menu-gradient: radial-gradient(50% 50% at 50% 50%, var(--complementarycolor) 0%, var(--secondarycolor) 100%);
     --main-gradient: radial-gradient(50% 50% at 50% 50%, var(--complementarycolor) 0%, var(--secondarycolor) 100%);
     --linear-gradient: linear-gradient(97.04deg, #00314F 38.01%, #0070B5 123.72%);
@@ -79,9 +79,10 @@ a:hover {
 }
 
 .nav-link {
-    text-align: end;
     --bs-nav-link-font-weight: bold;
     --bs-nav-link-color: white;
+    --bs-navbar-nav-link-padding-x: 1rem;
+    text-align: end;
 }
 
 .nav-link.active {
@@ -147,6 +148,15 @@ a:hover {
     max-height: 750px;
 }
 
+.card-content {
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.25rem;
+    }
+}
+
 .featured-food-card:hover {
     transition: transform .2s;
     transform: scale(1.1);
@@ -191,7 +201,7 @@ a:hover {
 }
 
     .about-header {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: bold;
         padding: 2%;
         letter-spacing: 5px;
@@ -204,6 +214,7 @@ a:hover {
     .about-subheader {
         padding: 2%;
         font-size: 1.5rem;
+        font-style: italic;
     }
 
     .about-desc {
@@ -349,6 +360,10 @@ a:hover {
             grid-template-areas: "food1" "food2" "food3";
             padding: 5% 20% 10% 20%;
         }
+
+        .featured-header-img {
+            width: 50%;
+        }
     }
 
     @media only screen and (max-width: 790px) {
@@ -360,11 +375,35 @@ a:hover {
         #limePieCard {
             margin-bottom: 50%;
         }
+
+        .featured-header-img {
+            width: 70%;
+        }
+
+        .featured-food-container {
+            width: 100%;
+            height: auto;
+        }
     }
 
     @media only screen and (max-width: 600px) {
         .featured-foods {
             padding: 5% 5% 10% 5%;
+        }
+
+        .card-content {
+            h3 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 420px) {
+        .featured-foods {
+            padding: 5% 3% 10% 3%;
         }
     }
 
@@ -401,6 +440,13 @@ a:hover {
             grid-template-areas: "footer1" "footer2" "footer3";
             gap: 2em;
             padding: 10% 0;
+        }
+    }
+
+    /* GENERAL */
+    @media only screen and (max-width: 720px) {
+        .about-section {
+            padding: 20% 10%;
         }
     }
 
