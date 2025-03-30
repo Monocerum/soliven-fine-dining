@@ -1384,16 +1384,17 @@ a:hover {
         }
     }
     
-    /* ABOUT PAGE */
+        /* ABOUT PAGE */
     .about-main {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-areas: "header" "content" "staff";
         justify-items: center;
         margin-top: 100px;
         animation: fadeInDown 1.5s ease-out forwards;
     }
 
     .about-main h1 {
+        grid-area: header;
         font-weight: 700;
         font-size: 64px;
         letter-spacing: 0.08em;
@@ -1424,6 +1425,7 @@ a:hover {
     }
 
     .staff-section {
+        grid-area: staff;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
@@ -1486,6 +1488,7 @@ a:hover {
     }
 
     .content-container {
+        grid-area: content;
         animation: fadeIn 2s ease-in 0s 1 normal forwards;
     }
 
@@ -1500,7 +1503,6 @@ a:hover {
     .staff-container {
         animation: topFadeIn 2s ease 0s 1 normal forwards;
     }
-
 
     .btns {
         position: sticky;
@@ -1517,7 +1519,6 @@ a:hover {
         top: 15%;
         z-index: 9999;
     }
-    
 
     .btns .btn {
         margin: 0 10px;
@@ -1528,56 +1529,46 @@ a:hover {
         border-radius: 4px;
         transition: all 0.3s ease;
     }
-    
+
     .btns .btn:hover {
         background-color: var(--secondarycolor);
         color: white;
     }
-    
+
     section {
         scroll-margin-top: 150px;
     }
 
-
     @media (max-width: 768px) {
-
         .container {
             padding: 50px;
         }
         .about-main h1 {
             font-size: 42px;
         }
-
         .staff-section {
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         }
-
         .staff-card {
             width: 100%;
         }
-
         .staff-card img {
             max-width: 180px;
         }
-
         .section-title {
             font-size: 18px;
             padding: 8px 15px;
         }
-
         .values-list {
             font-size: 25px;
         }
-
         .values-sublist {
             font-size: 20px;
         }
-
         .logo-page{
             max-width: 40%;
             margin-top: 10%;
         }
-    
     }
 
     @media (max-width: 480px) {
@@ -1587,42 +1578,33 @@ a:hover {
         .about-main h1 {
             font-size: 32px;
         }
-
         .staff-section {
             grid-template-columns: 1fr;
         }
-
         .staff-card {
             width: 100%;
         }
-
         .staff-card img {
             max-width: 160px;
         }
-
         .section-title {
             font-size: 16px;
             padding: 6px 12px;
         }
-
         .values-list {
             font-size: 18px;
         }
-
         .values-sublist {
             font-size: 12px;
         }
-
         .logo-page{
             max-width: 70%;
             margin-top: 20%;
             margin-bottom: -15%;
         }
-
         .btns .btn {
-           font-size: 50%;
+        font-size: 50%;
         }
-        
     }
 
     @keyframes fadeInDown {
