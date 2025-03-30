@@ -1366,6 +1366,12 @@ a:hover {
         text-align: justify;
     }
 
+    .btn-group {
+        position: fixed;
+        top: 50%;
+        z-index: 9999;
+    }
+
     #vission{
         scroll-margin-top: 30vh;
     }
