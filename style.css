@@ -775,9 +775,9 @@ a {
 
     /* ABOUT PAGE */
     .about-main {
-        display: flex;  
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
         margin-top: 100px;
         animation: fadeInDown 1.5s ease-out forwards;
     }
@@ -791,7 +791,6 @@ a {
     .text-justify {
         text-align: justify;
     }
-    
 
     .line {
         width: 100%;
@@ -810,16 +809,15 @@ a {
     }
 
     .staff-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
+        justify-content: center;
     }
 
     .staff-card {
         text-align: center;
         width: 250px;
-        margin-bottom: 20px;
         transition: transform 0.3s ease;
     }
 
@@ -833,7 +831,7 @@ a {
         margin-bottom: 15px;
     }
 
-    .custom-text{
+    .custom-text {
         color: #00314F;
     }
 
@@ -867,6 +865,13 @@ a {
         opacity: 1;
     }
 
+    .logo-page{
+        max-width: 17%;
+        margin-top: 5%;
+    }
+
+   
+
     @keyframes fadeInDown {
         0% {
             opacity: 0;
@@ -879,13 +884,20 @@ a {
     }
 
     @media (max-width: 768px) {
-        
+
+        .container {
+            padding: 50px;
+        }
         .about-main h1 {
             font-size: 42px;
         }
 
+        .staff-section {
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        }
+
         .staff-card {
-            width: 45%;
+            width: 100%;
         }
 
         .staff-card img {
@@ -905,26 +917,28 @@ a {
             font-size: 20px;
         }
 
-        .col-md-4 {
-            flex: 0 0 50%; 
-            max-width: 50%;
+        .logo-page{
+            max-width: 40%;
+            margin-top: 10%;
         }
-        
+    
     }
 
-    
 
     @media (max-width: 480px) {
-
-        .container{
-            padding: 10px;
+        .container {
+            padding: 50px;
         }
         .about-main h1 {
             font-size: 32px;
         }
 
+        .staff-section {
+            grid-template-columns: 1fr;
+        }
+
         .staff-card {
-            width: 90%;
+            width: 100%;
         }
 
         .staff-card img {
@@ -943,4 +957,11 @@ a {
         .values-sublist {
             font-size: 12px;
         }
+
+        .logo-page{
+            max-width: 70%;
+            margin-top: 20%;
+            margin-bottom: -15%;
+        }
+        
     }
