@@ -5,11 +5,11 @@
     --bs-link-hover-color-rgb: var(--tertiarycolor);
     --primarycolor: white;
     --secondarycolor: #00314F;
-    --tertiarycolor: rgb(174, 227, 255);
+    --tertiarycolor: #aee3ff;
     --complementarycolor: #0070B5; 
-    --menu-gradient: radial-gradient(50% 50% at 50% 50%, var(--complementarycolor) 0%, var(--secondarycolor) 100%);
+    --lightercomplementary: #009AFA;
     --main-gradient: radial-gradient(50% 50% at 50% 50%, var(--complementarycolor) 0%, var(--secondarycolor) 100%);
-    --linear-gradient: linear-gradient(97.04deg, #00314F 38.01%, #0070B5 123.72%);
+    --linear-gradient: linear-gradient(97.04deg, var(--secondarycolor) 38.01%, var(--complementarycolor) 123.72%);
     --card-bgcolor: rgba(255, 255, 255, 0.3);
 }
 
@@ -22,7 +22,7 @@ html {
 body {
     margin: 0px;
     padding: 0px;
-    background: white;
+    background: var(--primarycolor);
 }
 
 * {
@@ -36,7 +36,7 @@ header {
 }
 
 nav {
-    background-color: #00314F;
+    background-color: var(--secondarycolor);
     font-size: 1.5em;
     display: grid;
     grid-template-areas: "nav1 nav2 nav3";
@@ -58,7 +58,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--primarycolor);
 }
 
 a:hover {
@@ -80,14 +80,14 @@ a:hover {
 
 .nav-link {
     --bs-nav-link-font-weight: bold;
-    --bs-nav-link-color: white;
+    --bs-nav-link-color: var(--primarycolor);
     --bs-navbar-nav-link-padding-x: 1rem;
     text-align: end;
     --bs-nav-link-font-size: 1.2rem;
 }
 
 .nav-link.active {
-    --bs-navbar-active-color: #009AFA;
+    --bs-navbar-active-color: var(--lightercomplementary);
     text-decoration: underline;
 }
 
@@ -129,7 +129,7 @@ a:hover {
 
 .featured-header-img {
     width: 30%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: var(--default-shadow);
     animation: fadeIn 2s ease-in 0s 1 normal forwards;
 }
 
@@ -256,13 +256,13 @@ a:hover {
     }
 
     .contact-container {
-        background: linear-gradient(96.69deg, #00314F 6.74%, #002236 104.65%);
+        background: var(--linear-gradient);
         border-radius: 20px;
-        color: white;
+        color: var(--primarycolor);
         width: 100%;
         padding: 7%;
         text-align: center;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: var(--default-shadow);
         animation: fadeIn 2s ease-in 0s 1 normal forwards;
     }
 
@@ -484,11 +484,11 @@ a:hover {
     /* GET IN TOUCH WITH US */
 
     .git-header {
-        background: linear-gradient(96.48deg, #00314F 33.9%, #0070B5 118.88%);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: var(--linear-gradient);
+        box-shadow: var(--default-shadow);
         border-radius: 0.5em;
         text-align: center;
-        color: white;
+        color: var(--primarycolor);
         padding: 2.5%;
         margin-bottom: 5%;
 
@@ -501,11 +501,11 @@ a:hover {
     }
 
     .contact-desc {
-        background: linear-gradient(96.69deg, #00314F 6.74%, #002236 104.65%);
+        background: var(--linear-gradient);
         border-radius: 20px;
-        color: white;
+        color: var(--primarycolor);
         padding: 7%;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: var(--default-shadow);
         width: 100%;
     }
 
@@ -520,15 +520,15 @@ a:hover {
 
     .form-label {
         align-content: end;
-        color: white;
+        color: var(--primarycolor);
     }
 
     .form1 {
-        background: linear-gradient(96.48deg, #00314F 33.9%, #0070B5 118.88%);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(96.48deg, var(--secondarycolor) 33.9%, var(--complementarycolor) 118.88%);
+        box-shadow: var(--default-shadow);
         border-radius: 0.5em;
         text-align: center;
-        color: white;
+        color: var(--primarycolor);
         padding: 3%;
 
         h3 {
@@ -552,11 +552,11 @@ a:hover {
 
     .submit-btn {
         border-radius: 0.5em;
-        background: linear-gradient(96.48deg, #00314F 33.9%, #0070B5 118.88%);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(96.48deg, var(--secondarycolor) 33.9%, var(--complementarycolor) 118.88%);
+        box-shadow: var(--default-shadow);
         width: 50%;
         margin: 0 auto;
-        color: white;
+        color: var(--primarycolor);
         font-weight: bold;
         font-size: 1.5em;
     }
@@ -576,7 +576,7 @@ a:hover {
             font-weight: bold;
             font-size: 1.5em;
             letter-spacing: 0.25rem;
-            color: white;
+            color: var(--primarycolor);
             text-align: center;
             padding-bottom: 5%;
         }
@@ -584,7 +584,7 @@ a:hover {
         iframe {
             width: 100%;
             border-radius: 2em;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: var(--default-shadow);
         }
     }
 
@@ -634,7 +634,7 @@ a:hover {
         gap: 5%;
         border-radius: 2em;
         padding: 5%;
-        color: white;
+        color: var(--primarycolor);
         align-items: center;
         animation: leftSlide 1s ease-in 0s 1 normal forwards;
     }
@@ -679,7 +679,7 @@ a:hover {
         object-fit: cover;
         border-radius: 100em;
         padding: 2%;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(var(--default-shadow));
     }
 
     .menu-item-header {
@@ -922,8 +922,8 @@ a:hover {
     }
 
     .section-title {
-        background-color: #00314F;
-        color: white;
+        background-color: var(--secondarycolor);
+        color: var(--primarycolor);
         padding: 10px 20px;
         border-radius: 20px;
         text-align: center;
@@ -955,7 +955,7 @@ a:hover {
     }
 
     .custom-text {
-        color: #00314F;
+        color: var(--secondarycolor);
     }
 
     .values-list {
