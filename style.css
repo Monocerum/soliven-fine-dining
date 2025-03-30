@@ -607,10 +607,8 @@ a:hover {
     .categories-header-img {
         display: grid;
         justify-content: center;
-        align-items: center;
-        text-align: center;
-        filter: var(--default-shadow);
         animation: fadeIn 2s ease-in 0s 1 normal forwards;
+        filter: var(--default-shadow);
     }
 
     /* Main Courses Grid Layout */
@@ -632,8 +630,8 @@ a:hover {
         align-items: center;
         justify-content: center;
         justify-items: center;
-        gap: 5%;
-        padding: 1% 0;
+        gap: 6;
+        padding: 5% 0;
         width: 100%;
     }
 
@@ -648,7 +646,7 @@ a:hover {
         letter-spacing: 0.08em;
     }
 
-    .menu-title {
+    .menu-title, .menu-title-tray {
         font-size: 54px;
         font-family: var(--primary-font);
         font-weight: bold;
@@ -662,7 +660,7 @@ a:hover {
         height: 300px;
         object-fit: cover;
         border-radius: 100em;
-        padding: 2%;
+        padding: 9%;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
@@ -678,7 +676,7 @@ a:hover {
     }
 
     .menu-extra, .menu-extra-tray {
-        font-size: 20px;
+        font-size: 19px;
         font-family: var(--primary-font);
         line-height: 26px;
         letter-spacing: 0.08em;
@@ -692,19 +690,6 @@ a:hover {
         text-shadow: var(--default-shadow);
         color: var(--tertiarycolor);
         margin: 10px 0;
-    }
-
-    .desserts {
-        .menu-container {
-            display: grid;
-            justify-content: end;
-            gap: 0;
-        }
-
-        .menu-item {
-            justify-self: end;
-            width: 100%;
-        }
     }
 
     .menu-body {
@@ -724,6 +709,24 @@ a:hover {
     .drinks .menu-item {
         justify-content: start;
         padding: 0 5%;
+    }
+
+    .menu-body {
+        animation: leftSlide 2s ease-in 0s 1 normal forwards;
+    }
+
+    .menu-item {
+        animation: UpSlide 2s ease-in 0s 1 normal forwards;
+    }
+
+    .menu-image {
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        opacity: 0.8;
+    }
+
+    .menu-image:hover {
+        transform: scale(1.05);
+        opacity: 1;
     }
 
     /* RESPONSIVE STYLES FOR MENU PAGE */
